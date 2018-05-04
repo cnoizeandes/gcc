@@ -69,7 +69,7 @@ nds32_fallback_frame_state (struct _Unwind_Context *context,
   _Unwind_Ptr new_cfa;
 
 #ifdef __NDS32_EB__
-#error "Signal handler is not supported for force unwind."
+// #error "Signal handler is not supported for force unwind."
 #endif
 
   if ((_Unwind_Ptr) pc & 3)
